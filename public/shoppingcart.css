@@ -1,0 +1,330 @@
+body {
+  font-family: "Montserrat";
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.text, .favourite .product .bottom .texts .fourth, .header .header-cvr .third, .header .header-cvr .second {
+  line-height: 25px;
+  font-size: 15px;
+}
+
+.header1 {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.header2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.bold-text, .header .header-cvr .name, .name {
+  font-weight: bold;
+}
+
+.name {
+  font-size: 20px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.header {
+  padding: 10px 30px;
+  border-bottom: 1px solid rgb(224, 224, 224);
+  background-color: white;
+}
+.header .header-cvr {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .header-cvr .name {
+  font-size: 20px;
+}
+.header .header-cvr .second {
+  display: flex;
+}
+.header .header-cvr .third {
+  display: flex;
+}
+
+.main {
+  padding: 50px;
+}
+.main .products {
+  width: 55%;
+}
+.main .products .product {
+  display: flex;
+  padding: 30px 0;
+  border-top: 1px solid rgb(236, 236, 236);
+}
+.main .products .product img {
+  width: 20%;
+}
+.main .products .product .right {
+  margin-left: 5%;
+  position: relative;
+}
+.main .products .product .right .top p {
+  margin: 0 0 5% 0;
+}
+.main .products .product .right .bottom {
+  position: absolute;
+  bottom: 0;
+}
+.main .flex {
+  display: flex;
+  justify-content: space-between;
+}
+.main .order-summary {
+  width: 35%;
+  padding: 20px;
+  background-color: #F9FAFB;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 10px;
+}
+.main .order-summary .div {
+  display: flex;
+  justify-content: space-between;
+  margin: 4px 0;
+  border-bottom: 1px solid rgb(221, 221, 221);
+}
+.main .order-summary button {
+  width: 100%;
+  padding: 16px 0;
+  border: none;
+  border-radius: 10px;
+  background-color: #4F46E5;
+  color: white;
+  font-size: 18px;
+}
+
+.favourite {
+  padding: 30px 40px;
+}
+.favourite .products {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.favourite .product {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 350px;
+}
+.favourite .product .top {
+  height: 500px;
+  border-radius: 10px;
+}
+.favourite .product .bottom .texts {
+  padding: 20px;
+  padding-left: 0;
+  font-size: 15px;
+}
+.favourite .product .bottom .texts .first {
+  font-weight: bold;
+}
+.favourite .product .bottom .texts .fourth {
+  color: rgb(168, 168, 168);
+}
+
+.footer {
+  background-color: white;
+  border-top: 1px solid rgb(224, 224, 224);
+  margin-top: 100px;
+  padding: 50px 30px 10px 30px;
+}
+.footer .footer1 {
+  margin-bottom: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.footer .p1 {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.footer .p2 {
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+.footer .email {
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-size: 20px;
+  border: 1px solid rgb(224, 224, 224);
+  outline-color: #4F46E5;
+  border-radius: 7px;
+  margin-right: 0;
+}
+.footer .des {
+  font-size: 15px;
+  margin: 20px 0;
+}
+.footer button {
+  padding: 10px 20px;
+  font-size: large;
+  background-color: #4F46E5;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  margin-left: 0;
+  transform: unset;
+  opacity: unset;
+}
+
+.mobile-header,
+.slidein {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .mobile-header {
+    display: block;
+    padding: 15px 30px 15px 30px;
+    border-bottom: 1px solid rgb(224, 224, 224);
+    background-color: white;
+  }
+  .mobile-header a {
+    text-decoration: none;
+    color: unset;
+  }
+  .mobile-header .header-cvr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .mobile-header .header-cvr .cvr1 {
+    display: flex;
+  }
+  button {
+    font-family: "Montserrat";
+    cursor: pointer;
+    padding: 7px 8px;
+    border: none;
+    border-radius: 7px;
+    background-color: #4F46E5;
+    color: black;
+    font-size: 15px;
+  }
+  .slidein {
+    display: block;
+    width: 70%;
+    z-index: 40;
+    background-color: white;
+    transition: 0.5s;
+    position: fixed;
+    right: -100%;
+    height: 100vh;
+    top: 0;
+    padding: 30px;
+  }
+  .slidein .fa-solid.fa-xmark.fa-xl {
+    float: right;
+  }
+  .slidein a {
+    color: black;
+    text-decoration: none;
+  }
+  .slidein .slideincvr {
+    margin-top: 50px;
+    display: block;
+    line-height: 50px;
+    font-size: 20px;
+  }
+  .slidein .cvr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .slidein .cvr a {
+    font-weight: bold;
+    font-size: 25px;
+  }
+  .header {
+    display: none;
+  }
+  .favourite {
+    margin-top: 30px;
+    padding: 30px 20px;
+  }
+  .favourite .products {
+    justify-content: space-between;
+  }
+  .favourite .product {
+    cursor: pointer;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    width: 150px;
+  }
+  .favourite .product .top {
+    height: 171.4px;
+    border-radius: 10px;
+  }
+  .favourite .product .bottom .texts {
+    padding: 20px 0;
+    font-size: 10px;
+  }
+  .footer {
+    padding: 50px 20px 10px 20px;
+    margin-top: 20px;
+  }
+  .footer h1 {
+    font-size: 30px;
+  }
+  .footer .email {
+    font-size: 15px;
+    width: 60%;
+  }
+  .footer form {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .footer button {
+    font-size: 15px;
+    width: 38%;
+  }
+  .main {
+    padding: 20px;
+    margin: 50px 0 100px 0;
+  }
+  .main .products {
+    width: 100%;
+  }
+  .main .products .product {
+    padding: 30px 0;
+  }
+  .main .products .product img {
+    width: 40%;
+  }
+  .main .products .product .right {
+    padding: 5px;
+  }
+  .main .flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .main .order-summary {
+    width: 100%;
+    margin-top: 80px;
+  }
+  .main .order-summary button {
+    padding: 10px 0;
+    font-size: 15px;
+  }
+}/*# sourceMappingURL=shoppingcart.css.map */
