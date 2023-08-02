@@ -62,7 +62,6 @@ function handleColor(item) {
   console.log(color)
 }
 
-If
 handleColor(color[0])
 
 
