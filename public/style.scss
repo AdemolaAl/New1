@@ -60,69 +60,27 @@ button{
 
 
 
-.header-dark{
-    padding: 10px 60px;
-    background-color: rgb(31, 31, 31);
-    color: white;
-
-    ul{
-        cursor: pointer;
-    }
-    ul:hover{
-        color: rgb(168, 168, 168);
-    }
-
+.header{
+    padding: 10px 0px;
+    border-bottom: 1px solid rgb(224, 224, 224);
     .header-cvr{
         display: flex;
+        flex-wrap:wrap;
         justify-content: space-between;
         align-items: center;
+        
 
         .name{
             @extend .bold-text;
             font-size: 20px;
-            color: white;
         }
         .second{
             display: flex;
             @extend .grey-text;
-            color: white;
         }
         .third{
             display: flex;
             @extend .grey-text;
-            color: white;
-        }
-        .third1{
-            display: flex;
-            @extend .text;
-            .profimg{
-                width: 35px;
-                height: 35px;
-                border-radius: 50px;
-                
-            }
-            .profile-container {
-                position: relative;
-            }
-            .dropdown-menu {
-                display: none;
-                position: absolute;
-                top: 100%;
-                left: -80px;
-                color: black;
-                background-color: #f9f9f9;
-                padding: 10px;
-                width: max-content;
-                div{
-                    margin: 10px 10px;
-                }
-
-            }
-            
-            .profile-container:hover .dropdown-menu {
-                display: block;
-
-            }
         }
     }
 }
@@ -324,7 +282,7 @@ button{
 .footer{
 
     margin-top: 100px;
-    padding: 50px 30px 10px 30px;
+    padding: 50px 20px 10px 30px;
     background-color: rgb(24, 25, 34);
     color: white;
 

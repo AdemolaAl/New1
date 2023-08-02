@@ -7,7 +7,7 @@ html(lang='en')
     link(rel='stylesheet', href='public/style.css')
     script(src='https://kit.fontawesome.com/0b68ed503d.js', crossorigin='anonymous')
 
-  body
+  body  
     if flash.error
       .popup-cvr
         .popup(style='background-color:#E9D502')
@@ -19,35 +19,17 @@ html(lang='en')
           div.close-popup-btn(onclick='hidePopup()', style='cursor:pointer') x
           p #{flash.success}
     .main-cvr
-      .header-dark
+      
+      .header
         .header-cvr
-          .name
-            a(href="/") Revolution
+          .name Revolution
           .second
-            ul
-              a(href="/product/Men")  Men
-            ul
-              a(href="/product/women")  Women
+            p Men
+            ul Women
             ul Plain
-          if user 
-            .third1
-              .profile-container
-                if user.fileId
-                  .profimg(style=`background-image: url('/images/${user.shortId}'); background-position: center; background-size: cover;`)
-                else 
-                  .profimg(style=`background-image: url('/pictures/user.jpg'); background-position: center; background-size: cover;`)
-
-                .dropdown-menu
-                  // Add your dropdown menu content here
-                  div(onclick=`window.location.href='/profile'`, style='cursor:pointer') Profile
-                  div Billing
-                  div Order History
-                  div Pending Order
-                  // For example, you can add links or other elements
-          else
-            .third
-              ul Search
-              ul Help
+          .third
+            ul Search
+            ul Help
       
       .mobile-header
         .header-cvr

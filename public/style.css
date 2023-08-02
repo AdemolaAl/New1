@@ -33,13 +33,13 @@ button {
   font-size: 15px;
 }
 
-.grey-text, .header-dark .header-cvr .third, .header-dark .header-cvr .second {
+.grey-text, .header .header-cvr .third, .header .header-cvr .second {
   color: rgb(105, 105, 105);
   font-size: 15px;
   margin: 0;
 }
 
-.bold-text, .header-dark .header-cvr .name, .shop .p1, .name {
+.bold-text, .header .header-cvr .name, .shop .p1, .name {
   font-weight: bold;
 }
 
@@ -55,61 +55,24 @@ button {
   font-size: 25px;
 }
 
-.header-dark {
-  padding: 10px 60px;
-  background-color: rgb(31, 31, 31);
-  color: white;
+.header {
+  padding: 10px 0px;
+  border-bottom: 1px solid rgb(224, 224, 224);
 }
-.header-dark ul {
-  cursor: pointer;
-}
-.header-dark ul:hover {
-  color: rgb(168, 168, 168);
-}
-.header-dark .header-cvr {
+.header .header-cvr {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
-.header-dark .header-cvr .name {
+.header .header-cvr .name {
   font-size: 20px;
-  color: white;
 }
-.header-dark .header-cvr .second {
-  display: flex;
-  color: white;
-}
-.header-dark .header-cvr .third {
-  display: flex;
-  color: white;
-}
-.header-dark .header-cvr .third1 {
+.header .header-cvr .second {
   display: flex;
 }
-.header-dark .header-cvr .third1 .profimg {
-  width: 35px;
-  height: 35px;
-  border-radius: 50px;
-}
-.header-dark .header-cvr .third1 .profile-container {
-  position: relative;
-}
-.header-dark .header-cvr .third1 .dropdown-menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: -80px;
-  color: black;
-  background-color: #f9f9f9;
-  padding: 10px;
-  width: -moz-max-content;
-  width: max-content;
-}
-.header-dark .header-cvr .third1 .dropdown-menu div {
-  margin: 10px 10px;
-}
-.header-dark .header-cvr .third1 .profile-container:hover .dropdown-menu {
-  display: block;
+.header .header-cvr .third {
+  display: flex;
 }
 
 .home {
@@ -175,7 +138,7 @@ button {
   font-size: 20px;
   color: white;
 }
-.category .categories .cat1 .color-over .text, .category .categories .cat1 .color-over .header-dark .header-cvr .third1, .header-dark .header-cvr .category .categories .cat1 .color-over .third1 {
+.category .categories .cat1 .color-over .text {
   padding-bottom: 30px;
 }
 .category .categories .cat1:hover .color-over {
@@ -208,7 +171,7 @@ button {
   font-size: 20px;
   color: white;
 }
-.category1 .categories .cat1 .color-over .text, .category1 .categories .cat1 .color-over .header-dark .header-cvr .third1, .header-dark .header-cvr .category1 .categories .cat1 .color-over .third1 {
+.category1 .categories .cat1 .color-over .text {
   padding-bottom: 30px;
 }
 .category1 .categories .cat1:hover .color-over {
@@ -286,7 +249,7 @@ button {
 
 .footer {
   margin-top: 100px;
-  padding: 50px 30px 10px 30px;
+  padding: 50px 20px 10px 30px;
   background-color: rgb(24, 25, 34);
   color: white;
 }
