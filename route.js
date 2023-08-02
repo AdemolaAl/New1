@@ -223,8 +223,8 @@ module.exports = function (app, userDB, DB, productDB
   
         // Set the appropriate content type
         res.contentType('image/webP');
-        res.setHeader('Cache-Control', 'public, max-age=3600');
-        res.setHeader('Expires', new Date(Date.now() + 3600000).toUTCString());
+        res.setHeader('Cache-Control', 'public, max-age=86400');
+        res.setHeader('Expires', new Date(Date.now() + 86400000).toUTCString());
   
         // Pipe the GridFS download stream to the response
         downloadStream.pipe(res)
