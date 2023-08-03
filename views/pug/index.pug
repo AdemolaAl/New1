@@ -7,7 +7,7 @@ html(lang='en')
     link(rel='stylesheet', href='public/style.css')
     script(src='https://kit.fontawesome.com/0b68ed503d.js', crossorigin='anonymous')
 
-  body  
+  body
     if flash.error
       .popup-cvr
         .popup(style='background-color:#E9D502')
@@ -18,8 +18,8 @@ html(lang='en')
         .popup
           div.close-popup-btn(onclick='hidePopup()', style='cursor:pointer') x
           p #{flash.success}
-    .main-cvr
-      
+    .main-cvr 
+
       .header
         .header-cvr
           .name Revolution
@@ -71,46 +71,39 @@ html(lang='en')
             a(href="/signin") 
               button(style='color: white;') Sign in      
 
+      .hm
+        p Back to School Sale
+        p.p2 Save up to 50%
+        p Get an extra 20% off with selected style SCHOOL20
+        button Shop
 
-      .home(style="background: url('https://img.freepik.com/free-photo/boots-footwear-white-fashion-classic_1172-291.jpg?size=626&ext=jpg&ga=GA1.1.1490266739.1687190353&semt=ais'); background-size: cover; background-position: center;")
-        .color-cover
-          .texts
-            h1 New arrivals are here
-            p
-              | The new arrivals have, well, newly arrived. Check out the latest options from our summer small-batch release while they&apos;re still in stock.
-            a(href="/product/new") 
-              button Shop New Arrivals
 
       .category
         .shop
           .p1 Shop by Category
           .p2 Browse all Categories
         .categories
-          .cat1(style="background: url('pictures/bottle.jpg');\
+          .cat1(style="background: url('https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/ac62e931-9110-46ff-87fb-3824bbee4f25/air-jordan-1-low-mens-shoes-z3Tl2VeJ.png');\
           background-size: cover;\
           background-position: center;")
             .color-over
-              .text New Arrivals
-          .cat1(style="background: url('pictures/watches.jpg');\
+              .text Lifestyle
+          .cat1(style="background: url('https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/e1075085-8108-4c56-9c73-d08d7ce73c6a/air-jordan-legacy-312-low-mens-shoes-Md7GjH.png');\
           background-size: cover;\
           background-position: center;")
             .color-over
-              .text Productivity
-          .cat1(style="background: url('pictures/camera.jpg');\
+              .text Jordans
+          .cat1(style="background: url('https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/52332e7e-fcac-427e-b0cf-cd603a29d90a/air-vapormax-2023-flyknit-mens-shoes-3q1qZg.png');\
           background-size: cover;\
           background-position: center;")
             .color-over
-              .text Workspace
-          .cat1(style="background: url('pictures/bag.jpg');\
+              .text Air Max
+          .cat1(style="background: url('https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/e6da41fa-1be4-4ce5-b89c-22be4f1f02d4/air-force-1-07-mens-shoes-jBrhbr.png');\
           background-size: cover;\
           background-position: center;")
             .color-over
-              .text Assesories
-          .cat1(style="background: url('pictures/products.jpg');\
-          background-size: cover;\
-          background-position: center;")
-            .color-over
-              .text Sales
+              .text Air Force 1
+              
       .category1
           .shop
             .p1 Shop by Category

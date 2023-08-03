@@ -72,7 +72,29 @@ button{cursor: pointer;}
         }
     }
 }
+.hm{
+    background: url('https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_1349,c_limit/25774e19-bbf4-4637-8bbb-6e578754c87b/nike-just-do-it.jpg');
+    width: 100%;
+    padding: 30px;
+    color: white;
+    p{
+        margin: 0;
+        padding: 0;
+    }
 
+    .p2{
+        font-size: 80px;
+        margin: 7px 0;
+        padding: 0;
+        font-weight: bold;
+    }
+
+    button{
+        margin-top: 30px;
+        color: black;
+        background-color: white;
+    }
+}
 
 .home1{
     margin: 30px;
@@ -232,7 +254,6 @@ button{cursor: pointer;}
         }
     }
 }
-
 
 
 .footer{

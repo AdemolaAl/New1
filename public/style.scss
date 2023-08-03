@@ -59,9 +59,8 @@ button{
 }
 
 
-
 .header{
-    padding: 10px 0px;
+    padding: 10px 30px;
     border-bottom: 1px solid rgb(224, 224, 224);
     .header-cvr{
         display: flex;
@@ -85,48 +84,27 @@ button{
     }
 }
 
-.home{
-    max-height: 90vh;
-    height: 600px;
-    background: url('pictures/alexander-andrews-BX4Q0gojWAs-unsplash.jpg');
-    background-size: cover;
-    background-position: center;
 
-    .color-cover{
-        height: 100%;
-        width: 100%;
-        background-color: rgba(70, 70, 70, 0.719);
-        display: flex;
-        justify-content: center;
-        align-items: center;
+.hm{
+    background: url('https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_1349,c_limit/25774e19-bbf4-4637-8bbb-6e578754c87b/nike-just-do-it.jpg');
+    padding: 30px;
+    color: white;
+    .p2{
+        font-size: 70px;
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
     }
-    .texts{
-        color: white;
-        text-align: center;
-        width: 750px;
-        h1{
-            font-size: 60px;
-            font-weight: bold;
-            margin-bottom: 0;
-        }
-
-        p{
-            font-size: 20px;
-            margin: 30px 0;
-        }
-
-        button{
-            padding: 15px 50px;
-            background-color: white;
-            border: none;
-            border-radius: 5px;
-            font-size: 18px;
-            font-family: 'Montserrat';
-            
-        }
+    p{
+        margin: 0;
+        padding: 0;
+    }
+    button{
+        margin-top: 30px;
+        color: black;
+        background-color: white;
     }
 }
-
 .category{
     padding: 70px 40px;
 
@@ -137,7 +115,7 @@ button{
 
         .cat1{
             height: 300px;
-            width: 210px;
+            width: 250px;
             border-radius: 10px;
             cursor: pointer;
             
@@ -282,7 +260,7 @@ button{
 .footer{
 
     margin-top: 100px;
-    padding: 50px 20px 10px 30px;
+    padding: 50px 30px 10px 30px;
     background-color: rgb(24, 25, 34);
     color: white;
 
@@ -387,14 +365,18 @@ button{
         padding: 15px 30px 15px 30px;
         border-bottom: 1px solid rgb(224, 224, 224);
         background-color: white;
-        a{text-decoration: none; color: unset;}
-
+    
+        a {
+            text-decoration: none;
+            color: unset;
+        }
+    
         .header-cvr {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            
-            .cvr1{
+    
+            .cvr1 {
                 display: flex;
             }
         }
@@ -447,7 +429,8 @@ button{
         }
     }
 
-    .header-dark {
+
+    .header{
         display: none;
     }
 
