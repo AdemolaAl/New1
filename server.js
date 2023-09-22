@@ -51,7 +51,7 @@ myDB(async client => {
   const userDB = await client.db('cluster0').collection('users');
   const productDB = await client.db('cluster0').collection('products')
   const DB = await client.db('cluster0');
-  routes(app, userDB, DB, productDB);
+  routes(app, userDB, DB, productDB); 
   auth(app, userDB, productDB);
 
   io.on('connection', socket => {
